@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS event handlers</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./img/zb-logo.jpg" alt="Logo" loading="lazy" width='100px'>
+            <img src="./img/zb-logo - Copy.jpg" alt="Logo" loading="lazy" width="100px">
+        </div>
+        <div class="input">
+            <input type="text" name="input" id="input">
+        </div>
+        <table class="my-table">
+            <tr>
+                <td class="ac" style="border-top-left-radius: 10px;">AC</td>
+                <td class="del">DEL</td>
+                <td id="divide" onclick="input('/')">÷</td>
+                <td id="multiply" onclick="input('*')"style="border-top-right-radius: 10px;">×</td>
+            </tr>
+            <tr>
+                <td onclick="input('7')">7</td>
+                <td onclick="input('8')">8</td>
+                <td onclick="input('9')">9</td>
+                <td onclick="input('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="input('4')">4</td>
+                <td onclick="input('5')">5</td>
+                <td onclick="input('6')">6</td>
+                <td onclick="input('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="input('1')">1</td>
+                <td onclick="input('2')">2</td>
+                <td onclick="input('3')">3</td>
+                <td class="equal" rowspan="2" style="border-bottom-right-radius: 10px;">=</td>
+            </tr>
+            <tr>
+                <td onclick="input('0')" style="border-bottom-left-radius: 10px;">0</td>
+                <td onclick="input('00')">00</td>
+                <td onclick="input('.')">.</td>
+            </tr>
+        </table>
+        <div class="under">
+            <p>COPYRIGHT &copy; 2023</p>
+            <p>Developed by Que Mnqika</p>
+        </div>
+    </div>
+
+
+    <!--script-->
+    <script src="./script/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    bottom: 57px;
+    margin: 20px;
+}
+
+.logo img{
+    position: absolute;
+    animation: flip 5s infinite;
+    padding: 15px;
+}
+
+.container{
+    border: 1px solid #000;
+    padding: 10px;
+    padding-top: 25px;
+    border-radius: 20px;
+    background-color: #757575;
+}
+
+.input{
+    padding: 10px;
+}
+
+
+#input{
+    width:  19rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 9px #3d3a3a;
+    background-color: #d9d9d9;
+    padding: 20px;
+}
+
+
+td{
+    padding: 1.5rem;
+    margin: 2px;
+    text-align: center;
+    border: 1.7px solid #6e6e6e;
+    height: 5rem;
+    background-color: #d3d3d3;
+}
+
+td:hover{
+    padding: 1.5rem;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid #505050;
+    height: 5rem;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #000;
+}
+
+.my-table{
+    padding: 8px;
+    position: relative;
+    left: 5px;
+}
+
+.under{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.under p{
+    font-size: 0.7rem;
+}
+
+@keyframes flip {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
